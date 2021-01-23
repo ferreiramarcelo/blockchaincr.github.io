@@ -51,7 +51,9 @@
     "uglify-es": "^3.0.27"
   },
   "dependencies": {
-    "animate.css": "^3.5.2",
+
+    "animate.css": "^3.7.2",
+
 
     "bootstrap-sass": "^3.3.7",
     "jquery": "^2.2.4",
