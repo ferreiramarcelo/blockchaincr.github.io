@@ -21,7 +21,9 @@
     "prewatch": "npm run build",
     "watch:css": "onchange './static-src/css/' -- npm run build:css",
     "watch:js": "onchange './static-src/js/' -- npm run build:js",
-    "watch:img": "onchange './static-src/img/' -- npm run build:img"
+    "watch:img": "onchange './static-src/img/' -- npm run build:img",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -52,12 +54,13 @@
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.0",
     "jquery": "^2.1.4",
     "magnific-popup": "^1.1.0",
     "particles.js": "^2.0.0",
-    "postcss-cli": "^4.1.1",
-    "simple-line-icons": "^2.4.1"
+    "postcss-cli": "^8.0.0",
+    "simple-line-icons": "^2.4.1",
+    "@snyk/protect": "latest"
   },
   "standard": {
     "ignore": [
@@ -67,5 +70,6 @@
       "$",
       "jQuery"
     ]
-  }
+  },
+  "snyk": true
 }
